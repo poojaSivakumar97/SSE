@@ -1,12 +1,20 @@
-# React + Vite
+# Live Commentary in React using Server-Sent Events (SSE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to implement live commentary in a React app using Server-Sent Events (SSE) and the `EventSource` API to create a persistent connection to a server.
 
-Currently, two official plugins are available:
+## Features
+- **React Frontend**: Displays live commentary in real-time.
+- **Server-Sent Events**: Utilizes the `EventSource` API to receive server updates.
+- **Stubbed Data**: Uses an array of strings as commentary data, with the ability to extend to real-time third-party API data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
+1. Clone the repository:
+```bash
+git clone https://github.com/your-repo.git
+cd your-repo
+2. to start server npm run start
+3. to start client npm run dev
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Future Scope
+Replace stubbed data with real-time third-party API.
+Improve UI/UX with enhanced formatting and error handling.
